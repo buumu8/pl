@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px #282c34;
+
+  background: #fc5c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6a82fb, #fc5c7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .App-logo {
@@ -35,4 +41,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.result-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+.searchbox {
+  width: 85%;
+  padding: 10px 10px;
+  margin: 0 10px 10px 10px;
+  border-radius: 10px;
+  border: 0px;
 }
