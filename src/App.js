@@ -37,16 +37,16 @@ function App() {
                 <h2 className="result-card-name">{d.name}</h2>
                 <h5 className="result-card-name">{d.name2}</h5>
                 <h2 className="result-card-price">
-                  สด รับเอง {parseFloat(d.AA).toLocaleString()} / {parseFloat(d.AA2).toLocaleString()}
+                  สด รับเอง {parseFloat(d.AA).toLocaleString()} / {parseFloat(d.AA2).toLocaleString()} ({d.unit})
                 </h2>
                 <h2 className="result-card-price">
-                  สด ส่งให้ {parseFloat(d.AB).toLocaleString()} / {parseFloat(d.AB2).toLocaleString()}
+                  สด ส่งให้ {parseFloat(d.AB).toLocaleString()} / {parseFloat(d.AB2).toLocaleString()} ({d.unit})
                 </h2>
                 <h2 className="result-card-price">
-                  เชื่อ รับเอง {parseFloat(d.BA).toLocaleString()} / {parseFloat(d.BA2).toLocaleString()}
+                  เชื่อ รับเอง {parseFloat(d.BA).toLocaleString()} / {parseFloat(d.BA2).toLocaleString()} ({d.unit})
                 </h2>
                 <h2 className="result-card-price">
-                  เชื่อ ส่งให้ {parseFloat(d.BB).toLocaleString()} / {parseFloat(d.BB2).toLocaleString()}
+                  เชื่อ ส่งให้ {parseFloat(d.BB).toLocaleString()} / {parseFloat(d.BB2).toLocaleString()} ({d.unit})
                 </h2>
                 {/* <h3>ทุน {parseFloat(d.cost).toLocaleString()}</h3> */}
               </div>
