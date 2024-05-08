@@ -4,11 +4,12 @@ import "./App.css";
 import data from "./data.json";
 function App() {
   const [keyword, setKeyword] = useState("");
+
   return (
     <div className="App">
       <div className="header">
         <h1>ค้นหาราคาสินค้า</h1>
-        <h3>อัพเดท 06/05/67</h3>
+        <h3>อัพเดท 08/05/67</h3>
         <div className="searchbar">
           <button className="clearButton" type="button" onClick={() => setKeyword("")}>
             ลบ
@@ -34,8 +35,8 @@ function App() {
             return (
               <div key={`${d.code}-${d.unit}-${d.price}-${index}`} className="result-card">
                 <h3 className="result-card-code">{d.code}</h3>
-                <h2 className="result-card-name">{d.name}</h2>
-                <h5 className="result-card-name">{d.name2}</h5>
+                <h2 className="result-card-name">{d.name2}</h2>
+                <h5 className="result-card-name">{d.name}</h5>
                 <h2 className="result-card-price">
                   สด รับเอง {parseFloat(d.AA).toLocaleString()} / {parseFloat(d.AA2).toLocaleString()} ({d.unit})
                 </h2>
