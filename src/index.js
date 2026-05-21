@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import MainApp from "./MainApp";
 import reportWebVitals from "./reportWebVitals";
+import Login from "./Login";
+
+export default function App() {
+  const [authed, setAuthed] = useState(false);
+
+  return authed ? <MainApp /> : <Login onSuccess={() => setAuthed(true)} />;
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
