@@ -10,7 +10,7 @@ function MainApp() {
     <div className="MainApp">
       <div className="header">
         <h1>ค้นหาราคาสินค้า</h1>
-        <h3>อัพเดท 21/05/69</h3>
+        <h3>อัพเดท 12/06/69</h3>
         <div className="searchbar">
           <button className="clearButton" type="button" onClick={() => setKeyword("")}>
             ลบ
